@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TitleBar from './TitleBar/titleBar';
 import Footer from './Footer/footer';
+import MusicTable from './MusicTable/musicTable';
+import SearchBar from './SearchBar/searchBar';
 
 class App extends Component { 
     constructor(props) {
@@ -11,12 +13,14 @@ class App extends Component {
         }
     }
 
+    
 
     render() {
         return (
             <div className="container-fluid"> 
                 <TitleBar />
-                
+                <SearchBar/>
+                <MusicTable/>
                 <Footer />
             </div>
         );
